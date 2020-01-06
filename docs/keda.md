@@ -130,6 +130,8 @@ kubectl get pods -w
 ```
 
 ## Cleanup
+
+```bash
 rm -rf ~/keda-webapi
 rm -rf ~/keda-worker
 kubectl delete deploy keda-webapi-http
@@ -139,3 +141,4 @@ kubectl delete deploy keda-worker
 kubectl delete secret keda-worker
 kubectl delete scaledobject keda-worker
 func kubernetes remove --namespace keda
+```
